@@ -11,6 +11,7 @@ html, body {
 body {
     width: 100%;
     margin: auto;
+    background-image: url(./img/background_a.jpg);
 }
 
 a:link {
@@ -29,7 +30,7 @@ img {
 .header, .post, .comments, .comment-respond, .pagination {
     width: 96%;
     background-color: white;
-    box-shadow: 10px 10px 5px dimgray;
+    box-shadow: 10px 10px 15px rgba(0,0,0,0.5);
     border-radius: 25px;
     margin: auto;
 }
@@ -66,14 +67,34 @@ img {
     font-size: 3em;
 }
 
-.menu ul {
+.menu .sub-menu {
+    display: none;
     list-style-type: none;
     margin: 0;
     padding-bottom: 2em;
 }
 
+.menu-item-has-children{
+    position: relative;
+}
+
+.menu-item-has-children .sub-menu{
+    position: absolute;
+    top:41px;
+    left:0;
+    right:0;
+    padding:0;
+    background-color: rgba(255,255,255,0.5)
+}
+.menu-item-has-children:hover .sub-menu{
+    display: block;
+}
+
+.menu-item-has-children .sub-menu .menu-item{
+}
+
 .menu li {
-    display: inline;
+    display: inline-block;
     padding-left: 1em;
     padding-right: 1em;
 }
@@ -81,6 +102,7 @@ img {
 .menu li a {
     font-size: 2em;
     color: black;
+    padding: 0 5px
 }
 
 .menu li a:hover {

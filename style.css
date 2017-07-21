@@ -89,8 +89,7 @@ img {
 }
 
 .post {
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding: 50px 10px 50px;
     max-height: 100%;
 }
 
@@ -125,9 +124,14 @@ img {
 
 .post p, #map {
     width: 70%;
-    min-width: 600px;
-    max-width: 900px;
     margin: auto;
+}
+
+@media (min-width: 800px) {
+    .post p, #map {
+        min-width: 600px;
+        max-width: 900px;
+    }
 }
 
 .post p {

@@ -99,6 +99,7 @@ img {
     display: inline-block;
     padding-left: 1em;
     padding-right: 1em;
+    padding-bottom: 1em;
 }
 
 .menu li a {
@@ -113,8 +114,7 @@ img {
 }
 
 .post {
-    box-sizing: border-box;
-    padding: 50px 10px 50px;
+    padding: 25px 10px 50px;
     max-height: 100%;
 }
 

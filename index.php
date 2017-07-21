@@ -98,7 +98,7 @@
 <!--<footer>-->
 <!--    <p>&copy; --><?php //echo date( 'Y' ); ?><!-- <a href="--><?php //echo esc_url( home_url() ); ?><!--">--><?php //bloginfo( 'name' ); ?><!--</a>-->
 <!--    Theme by <a href="http://www.bananaroamer.com">Bradshaw</a></p>-->
-<!--</footer> <!-- footer -->-->
+<!--</footer> <!-- footer -->
 
 <?php wp_footer(); ?>
 

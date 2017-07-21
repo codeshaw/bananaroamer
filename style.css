@@ -23,6 +23,7 @@ a:visited {
 
 img {
     max-width: 80%;
+    height: auto;
 }
 
 .header, .post, .comments, .comment-respond, .pagination {

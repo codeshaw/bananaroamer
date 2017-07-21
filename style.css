@@ -27,12 +27,18 @@ img {
 }
 
 .header, .post, .comments, .comment-respond, .pagination {
-    width: 60%;
-    min-width: 800px;
+    width: 96%;
     background-color: white;
     box-shadow: 10px 10px 5px dimgray;
     border-radius: 25px;
     margin: auto;
+}
+
+@media (min-width: 800px) {
+    .header, .post, .comments, .comment-respond, .pagination {
+        width: 60%;
+        min-width: 800px;
+    }
 }
 
 .header h1, .header h2, .header h3, .header li, .postHeader h1, .postHeader h2, .postHeader h4, .meta p, .meta a, .pagination a {
@@ -46,7 +52,13 @@ img {
 
 .header h1 {
     margin:0;
-    font-size: 7em;
+    font-size: 5em;
+}
+
+@media (min-width: 800px) {
+    .header h1 {
+        font-size: 7em;
+    }
 }
 
 .header h3 {

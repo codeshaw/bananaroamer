@@ -69,18 +69,3 @@ function wanderlost_get_background() {
     next($backgrounds);
     echo $current;
 }
-
-/**
- * Debug to the damn console
- *
- * @param $data The data to debug
- */
-function debug_to_console( $data ) {
-    $output = $data;
-    if ( is_array( $output ) )
-        $output = implode( ',', $output);
-
-    echo "<script>console.log( 'Debug Objects: " . $output . "' );</script>";
-}
-
-?>

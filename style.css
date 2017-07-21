@@ -35,10 +35,10 @@ img {
     margin: auto;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 768px) {
     .header, .post, .comments, .comment-respond, .pagination {
         width: 60%;
-        min-width: 800px;
+        min-width: 768px;
     }
 }
 
@@ -50,15 +50,15 @@ img {
     box-sizing: border-box;
     margin-bottom: 25px;
     text-align: center;
-    padding:
+    padding: 0 5px;
 }
 
 .header h1 {
     margin:0;
-    font-size: 5em;
+    font-size: 4em;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 768px) {
     .header h1 {
         font-size: 7em;
     }
@@ -66,7 +66,13 @@ img {
 
 .header h3 {
     margin:0;
-    font-size: 3em;
+    font-size: 2em;
+}
+
+@media (min-width: 768px) {
+    .header h3 {
+        font-size: 3em;
+    }
 }
 
 .menu .sub-menu {
@@ -132,7 +138,7 @@ img {
 }
 
 
-@media (min-width: 800px) {
+@media (min-width: 768px) {
     .postHeader {
         min-width: 600px;
         max-width: 900px;
@@ -158,7 +164,7 @@ img {
     margin: auto;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 768px) {
     .post p, #map {
         min-width: 600px;
         max-width: 900px;
@@ -180,8 +186,15 @@ img {
     height:auto;
     background: repeat fixed center;
     background-size: cover;
-    padding-top: 75px;
-    padding-bottom: 75px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+@media (min-width: 768px) {
+    .image_a, .image_b, .image_c {
+        padding-top: 75px;
+        padding-bottom: 75px;
+    }
 }
 
 .image_a {

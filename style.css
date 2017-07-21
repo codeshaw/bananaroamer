@@ -28,6 +28,7 @@ img {
 }
 
 .header, .post, .comments, .comment-respond, .pagination {
+    box-sizing: border-box;
     width: 96%;
     background-color: white;
     box-shadow: 10px 10px 15px rgba(0,0,0,0.5);
@@ -47,7 +48,6 @@ img {
 }
 
 .header {
-    box-sizing: border-box;
     margin-bottom: 25px;
     text-align: center;
     padding: 0 5px;

@@ -74,10 +74,6 @@
             </div>
         </div>
 
-        <!--?php if (($wp_query->current_post +1) == ($wp_query->post_count) && (!is_singular())): ?> -->
-<!--            <p>THIS IS THE LAST POST</p>-->
-        <!--?php endif?> -->
-
     <?php endwhile;
     else : ?>
 

@@ -28,7 +28,7 @@ var TRACKING = TRACKING || (function () {
  * Bootstrapping function for google maps initialisation
  */
 function initMap() {
-    $.get("http://dev.codeshaw.com:8088/tracker-service/checkin/" + key, function (data) {
+    $.get("https://www.bananaroamer.com:8443/tracker-service/checkin/" + key, function (data) {
         drawMap(data.coordinates);
     });
 }

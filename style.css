@@ -1,277 +1,1 @@
-@import url(//fonts.googleapis.com/css?family=Permanent+Marker);
-@import url(//fonts.googleapis.com/css?family=Amatic+SC);
-
-html, body {
-    height: 100%;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    width: 100%;
-    margin: auto;
-    background-image: url(./img/background_a.jpg);
-}
-
-a:link {
-    color: black;
-}
-
-a:visited {
-    color: black;
-}
-
-img {
-    max-width: 80%;
-    height: auto;
-    border: 3px solid black;
-}
-
-.header, .post, .comments, .comment-respond, .pagination {
-    box-sizing: border-box;
-    width: 96%;
-    background-color: white;
-    box-shadow: 10px 10px 15px rgba(0,0,0,0.5);
-    border-radius: 25px;
-    margin: auto;
-}
-
-@media (min-width: 768px) {
-    .header, .post, .comments, .comment-respond, .pagination {
-        width: 60%;
-        min-width: 768px;
-    }
-}
-
-.header h1, .header h2, .header h3, .header li, .postHeader h1, .postHeader h2, .postHeader h4, .meta p, .meta a, .pagination a {
-    font-family: "Amatic SC", cursive;
-}
-
-.header {
-    margin-bottom: 25px;
-    text-align: center;
-    padding: 0 5px;
-}
-
-.header h1 {
-    margin:0;
-    font-size: 4em;
-}
-
-@media (min-width: 768px) {
-    .header h1 {
-        font-size: 7em;
-    }
-}
-
-.header h3 {
-    margin:0;
-    font-size: 2em;
-}
-
-@media (min-width: 768px) {
-    .header h3 {
-        font-size: 3em;
-    }
-}
-
-.menu .sub-menu {
-    display: none;
-    list-style-type: none;
-    margin: 0;
-    padding-bottom: 2em;
-}
-
-.menu-item-has-children{
-    position: relative;
-}
-
-.menu-item-has-children .sub-menu{
-    position: absolute;
-    top:41px;
-    left:0;
-    right:0;
-    padding:0;
-    background-color: rgba(255,255,255,0.5)
-}
-.menu-item-has-children:hover .sub-menu{
-    display: block;
-}
-
-.menu-item-has-children .sub-menu .menu-item{
-}
-
-.menu li {
-    display: inline-block;
-    padding-left: 1em;
-    padding-right: 1em;
-    padding-bottom: 1em;
-}
-
-.menu li a {
-    font-size: 2em;
-    color: black;
-    padding: 0 5px
-}
-
-.menu li a:hover {
-    background-color: black;
-    color: white;
-}
-
-.post {
-    padding: 25px 10px 50px;
-    max-height: 100%;
-}
-
-#map {
-    height: 600px;
-    margin: 3em;
-    padding: 25px;
-    width: auto;
-    border: 2px solid black;
-}
-
-.postHeader {
-    width: 70%;
-    margin: auto;
-}
-
-
-@media (min-width: 768px) {
-    .postHeader {
-        min-width: 600px;
-        max-width: 900px;
-    }
-}
-
-.postHeader h1, .postHeader h5 {
-    text-align: left;
-}
-
-.postHeader h1 {
-    font-size: 3em;
-    margin-bottom: 0;
-}
-
-.postHeader h4 {
-    margin-top: 0;
-    margin-bottom: 1em;
-}
-
-.post p, #map {
-    width: 70%;
-    margin: auto;
-}
-
-@media (min-width: 768px) {
-    .post p, #map {
-        min-width: 600px;
-        max-width: 900px;
-    }
-}
-
-.post p {
-    font-family: "Montserrat", sans-serif;
-    padding-bottom: 1em;
-    opacity: 1.5;
-}
-
-.pagination p {
-    text-align: center;
-    font-size: 3em;
-}
-
-.image_a, .image_b, .image_c {
-    height:auto;
-    background: repeat fixed center;
-    background-size: cover;
-    padding-top: 25px;
-    padding-bottom: 25px;
-}
-
-@media (min-width: 768px) {
-    .image_a, .image_b, .image_c {
-        padding-top: 75px;
-        padding-bottom: 75px;
-    }
-}
-
-.image_a {
-    background-image: url("./img/background_a.jpg");
-}
-.image_b {
-    background-image: url("./img/background_b.jpg");
-}
-.image_c {
-    background-image: url("./img/background_c.jpg");
-}
-
-footer {
-    display: block;
-    margin: 0;
-    padding: 10px;
-    color: white;
-    background-color: black;
-    text-align: center;
-
-    width: 100%;
-    bottom: 0;
-    position: fixed;
-}
-
-footer p {
-    margin: 0;
-    font-family: "Amatic SC", cursive;
-    font-size: 1.5em;
-}
-
-footer a:link {
-    color: white;
-}
-
-footer a:visited {
-    color: white;
-}
-
-/* WordPress Core
--------------------------------------------------------------- */
-.alignnone {
-    margin: 5px 20px 20px 0;
-}
-
-.aligncenter, div.aligncenter p.aligncenter {
-    display: block;
-    margin: 5px auto 5px auto;
-}
-
-.alignright {
-    float:right;
-    margin: 5px 0 20px 20px;
-}
-
-.alignleft {
-    float: left;
-    margin: 5px 20px 20px 0;
-}
-
-a img.alignright {
-    float: right;
-    margin: 5px 0 20px 20px;
-}
-
-a img.alignnone {
-    margin: 5px 20px 20px 0;
-}
-
-a img.alignleft {
-    float: left;
-    margin: 5px 20px 20px 0;
-}
-
-a img.aligncenter {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
+@import url(//fonts.googleapis.com/css?family=Permanent+Marker);@import url(//fonts.googleapis.com/css?family=Amatic+SC);html, body {    height: 100%;    width: 100%;    margin: 0;    padding: 0;}body {    width: 100%;    margin: auto;    background-image: url(./img/background_a.jpg);}a:link {    color: black;}a:visited {    color: black;}img {    max-width: 80%;    height: auto;    border: 3px solid black;}.header, .post, .comments, .comment-respond, .pagination {    box-sizing: border-box;    width: 96%;    background-color: white;    box-shadow: 10px 10px 15px rgba(0,0,0,0.5);    border-radius: 25px;    margin: auto;}@media (min-width: 768px) {    .header, .post, .comments, .comment-respond, .pagination {        width: 60%;        min-width: 768px;    }}.header h1, .header h2, .header h3, .header li, .postHeader h1, .postHeader h2, .postHeader h4, .meta p, .meta a, .pagination a {    font-family: "Amatic SC", cursive;}.header {    margin-bottom: 25px;    text-align: center;    padding: 0 5px;}.header h1 {    margin:0;    font-size: 4em;}@media (min-width: 768px) {    .header h1 {        font-size: 7em;    }}.header h3 {    margin:0;    font-size: 2em;}@media (min-width: 768px) {    .header h3 {        font-size: 3em;    }}.menu .sub-menu {    display: none;    list-style-type: none;    margin: 0;    padding-bottom: 2em;}.menu-item-has-children{    position: relative;}.menu-item-has-children .sub-menu{    position: absolute;    top:41px;    left:0;    right:0;    padding:0;    background-color: rgba(255,255,255,0.5)}.menu-item-has-children:hover .sub-menu{    display: block;}.menu-item-has-children .sub-menu .menu-item{}.menu li {    display: inline-block;    padding-left: 1em;    padding-right: 1em;    padding-bottom: 1em;}.menu li a {    font-size: 2em;    color: black;    padding: 0 5px}.menu li a:hover {    background-color: black;    color: white;}.post {    padding: 25px 10px 50px;    max-height: 100%;}#map {    height: 600px;    margin: 3em;    padding: 25px;    width: auto;    border: 2px solid black;}.postHeader {    width: 70%;    margin: auto;}@media (min-width: 768px) {    .postHeader {        min-width: 600px;        max-width: 900px;    }}.postHeader h1, .postHeader h5 {    text-align: left;}.postHeader h1 {    font-size: 3em;    margin-bottom: 0;}.postHeader h4 {    margin-top: 0;    margin-bottom: 1em;}.post p, #map {    width: 70%;    margin: auto;}.post ul, .post ol {    width: 60%;    margin: auto;}@media (min-width: 768px) {    .post p, #map {        min-width: 600px;        max-width: 900px;    }}.post p, .post ul, .post ol {    font-family: "Montserrat", sans-serif;    padding-bottom: 1em;    opacity: 1.5;}.pagination p {    text-align: center;    font-size: 3em;}.image_a, .image_b, .image_c {    height:auto;    background: repeat fixed center;    background-size: cover;    padding-top: 25px;    padding-bottom: 25px;}@media (min-width: 768px) {    .image_a, .image_b, .image_c {        padding-top: 75px;        padding-bottom: 75px;    }}.image_a {    background-image: url("./img/background_a.jpg");}.image_b {    background-image: url("./img/background_b.jpg");}.image_c {    background-image: url("./img/background_c.jpg");}footer {    display: block;    margin: 0;    padding: 10px;    color: white;    background-color: black;    text-align: center;    width: 100%;    bottom: 0;    position: fixed;}footer p {    margin: 0;    font-family: "Amatic SC", cursive;    font-size: 1.5em;}footer a:link {    color: white;}footer a:visited {    color: white;}/* WordPress Core-------------------------------------------------------------- */.alignnone {    margin: 5px 20px 20px 0;}.aligncenter, div.aligncenter p.aligncenter {    display: block;    margin: 5px auto 5px auto;}.alignright {    float:right;    margin: 5px 0 20px 20px;}.alignleft {    float: left;    margin: 5px 20px 20px 0;}a img.alignright {    float: right;    margin: 5px 0 20px 20px;}a img.alignnone {    margin: 5px 20px 20px 0;}a img.alignleft {    float: left;    margin: 5px 20px 20px 0;}a img.aligncenter {    display: block;    margin-left: auto;    margin-right: auto;}
